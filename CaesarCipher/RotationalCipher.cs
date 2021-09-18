@@ -23,7 +23,7 @@ namespace CaesarCipher
                 return character;
             }
             
-            int unicodeBase = character < 92 ? 65 : 97;
+            int unicodeBase = character < 91 ? 65 : 97;
             int difference = character - unicodeBase;
             char result = (char) (unicodeBase + Mod(difference + shiftKey, 26));
 
